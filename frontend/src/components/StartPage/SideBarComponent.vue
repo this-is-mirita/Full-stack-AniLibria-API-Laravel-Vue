@@ -38,7 +38,7 @@
             </select>
         </div>
         <div>
-            <button>
+            <button class="btn btn-danger">
                 Искать
             </button>
         </div>

@@ -34,5 +34,8 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'anilibria' => [
+        'base_uri' => env('ANILIBRIA_API'),
+    ],
 
 ];
