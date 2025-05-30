@@ -1,17 +1,5 @@
 <script setup>
-import axios from "axios";
-import {onMounted, ref} from "vue";
 
-const BASE_URL = 'http://localhost:8000';
-const random = ref([])
-onMounted(async () => {
-    try {
-        const response = await axios.get(`${BASE_URL}/api/title/random`);
-        console.log(response);
-    } catch (error) {
-        console.error("Ошибка при загрузке данных:", error);
-    }
- });
 </script>
 
 
@@ -22,7 +10,7 @@ onMounted(async () => {
             Аниме сериалы бывают умопомрачительно смешными (комедийные)...
         </p>
         <div>
-            <p>{{ random.id}}</p>
+<!--            <p>{{ random.id}}</p>-->
 <!--            <p>{{ random.description}}</p>-->
 <!--            <p>{{ random.genres}}</p>-->
 <!--            <p>{{ random.names}}</p>-->
